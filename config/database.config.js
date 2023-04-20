@@ -1,3 +1,3 @@
 module.exports = {
-    url: 'mongodb://localhost:27017/easy-notes'
+    url: 'mongodb+srv://datauser:test12345@cluster0.wtvrpkn.mongodb.net/test'
 }
