@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
-export const Message = mongoose.model("message", {
-  message: {
+export const Chat = mongoose.model("chat", {
+  data: {
     type: String,
     required: true,
   },
@@ -13,8 +13,11 @@ export const Message = mongoose.model("message", {
     type: mongoose.Types.ObjectId,
     ref: "user",
   },
-  message_status:{
-    type: String,
-    default:"sent"
+  status:{
+    type: Number,
+    default:1
+  },
+  message_type : {
+    type :String
   }
 });
